@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "vue": "^1.0.0",
-    "mint-ui": "^0.1.21",
+    "bh-mint-ui": "latest",
     "babel-runtime": "^6.0.0"
   },
   "devDependencies": {
