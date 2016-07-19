@@ -40,6 +40,17 @@ module.exports = {
       }
     ]
   },
+  vue: {
+    postcss: [require('postcss-cssnext')({
+      features: {
+        rem: false
+      }
+    }), require('postcss-pxtorem')({
+      rootValue: 20,
+      propWhiteList: []
+    })],
+    autoprefixer: false
+  },
   devServer: {
     historyApiFallback: true,
     noInfo: true,
