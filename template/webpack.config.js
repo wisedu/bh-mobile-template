@@ -41,6 +41,14 @@ module.exports = {
           limit: 10000,
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+        loader: 'url',
+        query: {
+          limit: 10000,
+          name: '[name].[ext]?[hash]'
+        }
       }
     ]
   },
