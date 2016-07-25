@@ -5,6 +5,11 @@ module.exports = {
       "required": true,
       "label": "Project name"
     },
+    "packageName": {
+      "type": "string",
+      "required": true,
+      "label": "package zip file name"
+    },
     "description": {
       "type": "string",
       "required": true,
