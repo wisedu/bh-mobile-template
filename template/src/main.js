@@ -15,6 +15,6 @@ if (process.env.NODE_ENV === 'production') {
     Init();
   });
 } else {
-  global.HOST = 'http://amptest.wisedu.com'
+  global.HOST = 'http://amptest.wisedu.com';
   Init();
 }
