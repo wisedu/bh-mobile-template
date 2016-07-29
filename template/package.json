@@ -3,9 +3,7 @@
   "description": "{{ description }}",
   "author": "{{ author }}",
   "packageName": "{{ packageName }}",
-  {{#private}}
   "private": true,
-  {{/private}}
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",

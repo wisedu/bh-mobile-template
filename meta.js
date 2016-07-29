@@ -1,28 +1,31 @@
 module.exports = {
   prompts: {
     "name": {
-      "type": "string",
+      "type": "input",
       "required": true,
-      "label": "Project name"
+      "label": "项目名称"
     },
     "packageName": {
-      "type": "string",
+      "type": "input",
       "required": true,
-      "label": "package zip file name"
+      "label": "打包文件的名称"
     },
     "description": {
-      "type": "string",
+      "type": "input",
       "required": true,
-      "label": "Project description",
+      "label": "项目描述",
       "default": "A Vue.js project"
     },
     "author": {
-      "type": "string",
-      "label": "Author"
+      "type": "input",
+      "label": "作者"
     },
-    "private": {
-      "type": "boolean",
-      "default": true
+    "useNativeHeader": {
+      "type": "confirm",
+      "label": "是否隐藏原生页头"
     }
+  },
+  filters: {
+    "config.xml": "useNativeHeader"
   }
 }
