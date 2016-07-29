@@ -11,7 +11,8 @@ let Init = () => {
 if (process.env.NODE_ENV === 'production') {
   // For the Hybrid App
   Hybrid.Init(() => {
-    global.HOST = site_url; // only can get this when Hybrid.Init is called
+    // only can get this when Hybrid.Init is called
+    global.HOST = site_url;
     Init();
   });
 } else {
