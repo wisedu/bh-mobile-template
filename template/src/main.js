@@ -7,7 +7,7 @@ let Init = () => {
     components: { App }
   });
 }
-
+{{#if isHybrid}}
 if (process.env.NODE_ENV === 'production') {
   // For the Hybrid App
   Hybrid.Init(() => {
@@ -19,3 +19,6 @@ if (process.env.NODE_ENV === 'production') {
   global.HOST = 'http://amptest.wisedu.com';
   Init();
 }
+{{else}}
+  Init()
+{{/if}}

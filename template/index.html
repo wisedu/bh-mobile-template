@@ -12,7 +12,9 @@
   </head>
   <body>
     <app></app>
+    {{#if isHybrid}}
     <script src="./static/mobile/js/hybrid.js"></script>
+    {{/if}}
     <script src="dist/build.js"></script>
   </body>
 </html>

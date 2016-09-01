@@ -20,6 +20,10 @@ module.exports = {
       "type": "input",
       "label": "作者"
     },
+    "isHybrid": {
+      "type": "confirm",
+      "label": "是否是 Hybrid 应用"
+    },
     "useNativeHeader": {
       "type": "confirm",
       "label": "是否隐藏原生页头"
