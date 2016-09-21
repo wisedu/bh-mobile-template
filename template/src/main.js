@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import App from './App.vue';
+import Index from './pages/index/index.vue';
 import VueResource from 'vue-resource';
 
 Vue.use(VueResource);
@@ -7,7 +7,7 @@ Vue.use(VueResource);
 let Init = () => {
   new Vue({
     el: 'body',
-    components: { App }
+    components: { Index }
   });
 }
 {{#if isHybrid}}
