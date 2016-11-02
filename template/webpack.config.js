@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+const PORT = '8080'
 
 module.exports = {
   entry: './src/main.js',
@@ -66,7 +67,8 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: true,
-    host: '0.0.0.0'
+    host: '0.0.0.0',
+    port: PORT
   },
   devtool: '#eval-source-map'
 }

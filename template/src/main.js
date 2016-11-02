@@ -3,6 +3,7 @@ import Index from './pages/index/index.vue';
 import VueResource from 'vue-resource';
 
 Vue.use(VueResource);
+Vue.http.options.credentials = true;
 
 let Init = () => {
   new Vue({
