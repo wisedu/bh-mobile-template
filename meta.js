@@ -14,22 +14,15 @@ module.exports = {
       "type": "input",
       "required": true,
       "label": "项目描述",
-      "default": "A Vue.js project"
+      "default": "A Wisedu Mobile App"
     },
     "author": {
       "type": "input",
       "label": "作者"
     },
-    "isHybrid": {
-      "type": "confirm",
-      "label": "是否是 Hybrid 应用"
-    },
     "useNativeHeader": {
       "type": "confirm",
       "label": "是否隐藏原生页头"
     }
-  },
-  filters: {
-    "config.xml": "useNativeHeader"
   }
 }
