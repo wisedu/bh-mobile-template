@@ -5,7 +5,7 @@
   "packageName": "{{ packageName }}",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
+    "dev": "npm install --registry=https://registry.npm.taobao.org && webpack-dev-server --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "deploy": "npm run build && node ./build/deploy.js"
   },
