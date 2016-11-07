@@ -70,7 +70,7 @@ module.exports = {
     host: '0.0.0.0',
     port: PORT
   },
-  devtool: '#eval-source-map'
+  devtool: '#source-map'
 }
 
 if (process.env.NODE_ENV === 'production') {
