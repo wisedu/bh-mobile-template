@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
-    <h1>\{{ msg }}</h1>
-  </div>
+  <h1 class="title">\{{ msg }}</h1>
 </template>
 
 <script>
@@ -18,8 +16,8 @@
   }
 </script>
 
-<style>
-  body {
-    font-family: Helvetica, sans-serif;
+<style scoped>
+  .title {
+    text-align: center;
   }
 </style>
