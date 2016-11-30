@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import Index from './pages/index/index.vue';
+import App from './App.vue';
 import VueRouter from 'vue-router';
 import VueResource from 'vue-resource';
 import {init} from 'bh-mobile-sdk';
@@ -16,11 +16,9 @@ const router = new VueRouter({
 routerconfig(router);
 
 let Init = () => {
-  new Vue({
-    el: 'body',
-    components: { Index }
-  });
+  router.start(App, '#app');
 }
+
 if (process.env.NODE_ENV === 'production') {
   init(() => {
     global.HOST = location.origin;
