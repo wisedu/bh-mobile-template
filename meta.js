@@ -19,10 +19,6 @@ module.exports = {
     "author": {
       "type": "input",
       "label": "作者"
-    },
-    "useNativeHeader": {
-      "type": "confirm",
-      "label": "是否隐藏原生页头"
     }
   }
 }
